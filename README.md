@@ -20,9 +20,9 @@ This change is important for code dependency management, to make sure that your 
 
 | Number | Name              | User                             | Email                               |
 | -------|-------------------|----------------------------------| ------------------------------------|
-| 11111  | Alice Distributed | <https://github.com/AliceUser)   | <mailto:alice@tecnico.ulisboa.pt>   |
-| 22222  | Bob Systems       | <https://github.com/BobUser)     | <mailto:bob@tecnico.ulisboa.pt>     |
-| 33333  | Charlie Rules     | <https://github.com/CharlieUser) | <mailto:charlie@tecnico.ulisboa.pt> |
+| 11111  | Alice Distributed | <https://github.com/AliceUser>   | <mailto:alice@tecnico.ulisboa.pt>   |
+| 22222  | Bob Systems       | <https://github.com/BobUser>     | <mailto:bob@tecnico.ulisboa.pt>     |
+| 33333  | Charlie Rules     | <https://github.com/CharlieUser> | <mailto:charlie@tecnico.ulisboa.pt> |
 
 ### Task leaders
 
