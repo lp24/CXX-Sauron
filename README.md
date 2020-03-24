@@ -16,21 +16,27 @@ This change is important for code dependency management, to make sure that your 
 
 ### Team members
 
-*(fill-in lines below with student number, name, and email; and then delete this line)*  
-11111 [Alice Distributed](https://github.com/AliceUser) <mailto:alice@tecnico.ulisboa.pt>  
-22222 [Bob Systems](https://github.com/BobUser) <mailto:bob@tecnico.ulisboa.pt>  
-33333 [Charlie Rules](https://github.com/CharlieUser) <mailto:charlie@tecnico.ulisboa.pt>
+*(fill-in table below with team members; and then delete this line)*  
+
+| Number | Name              | User                             | Email                               |
+| -------|-------------------|----------------------------------| ------------------------------------|
+| 11111  | Alice Distributed | <https://github.com/AliceUser)   | <mailto:alice@tecnico.ulisboa.pt>   |
+| 22222  | Bob Systems       | <https://github.com/BobUser)     | <mailto:bob@tecnico.ulisboa.pt>     |
+| 33333  | Charlie Rules     | <https://github.com/CharlieUser) | <mailto:charlie@tecnico.ulisboa.pt> |
 
 ### Task leaders
 
-*(fill-in lines below with name of team member assigned to each task set; and then delete this line)*  
-- core set - protocol buffers, silo-client - _(whole team)_;
-- T1 - cam_join, cam_info, eye - _Alice Distributed_;
-- T2 - report, spotter - _Bob Systems_;
-- T3 - track, trackMatch, trace - _Charlie Rules_;
-- test T1 - _Charlie Rules_;
-- test T2 - _Alice Distributed_;
-- test T3 - _Bob Systems_.
+*(fill-in table below with with team members assigned as leader to each task set; and then delete this line)*  
+
+| Task set | To-Do                         | Leader              |
+| ---------|-------------------------------| --------------------|
+| core     | protocol buffers, silo-client | _(whole team)_      |
+| T1       | cam_join, cam_info, eye       | _Alice Distributed_ |
+| T2       | report, spotter               | _Bob Systems_       |
+| T3       | track, trackMatch, trace      | _Charlie Rules_     |
+| T4       | test T1                       | _Charlie Rules_     |
+| T5       | test T2                       | _Alice Distributed_ |
+| T6       | test T3                       | _Bob Systems_       |
 
 
 ## Getting Started
