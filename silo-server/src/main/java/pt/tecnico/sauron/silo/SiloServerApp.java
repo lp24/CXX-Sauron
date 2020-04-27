@@ -4,7 +4,7 @@ package pt.tecnico.sauron.silo;
 public class SiloServerApp {
 	
 	public static void main(String[] args) {
-		System.out.println(SiloServerApp.class.getSimpleName());
+		System.out.println("Sauron silo server");
 		
 		// receive and print arguments
 		System.out.printf("Received %d arguments%n", args.length);
