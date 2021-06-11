@@ -1,0 +1,7 @@
+spot car 1*
+spot car 1234AB
+trail car 1234AB
+spot person 12*
+spot person 12*5
+spot person 12345
+quit

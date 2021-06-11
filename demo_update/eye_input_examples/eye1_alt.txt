@@ -1,0 +1,7 @@
+person,123456789
+car,00AA00
+zzz,5000
+car,00AA00
+car,68XY20
+person,111111000
+

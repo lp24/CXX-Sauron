@@ -1,0 +1,28 @@
+spot person 14388236
+
+spot car 7013LL
+spot car 7013L*
+spot car *LL
+spot car *L*L
+
+trail person 143882*
+trail person *43882
+trail person 43*82
+
+trail car 7013LL
+trail car 7013L*
+trail car *013L
+
+ctrl_ping A45
+
+ctrl_clear
+
+spot car *LLLLLLL
+
+spot person 1234A
+spot person 12340123120
+spot person *1234A
+spot person 12*3
+spot person 123*
+
+ctrl_clear

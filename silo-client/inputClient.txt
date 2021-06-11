@@ -1,0 +1,33 @@
+ctrl_clear
+join cam1 -5.564345 -6.876578
+join cam4 3 5
+join cam1 3.987493 4.947382
+join cam2 1.048593 2.584938
+join cam3 6.194393 8.485748
+checkpoint 1
+report cam1 car 1234AB
+report cam1 car ABCD12
+report cam2 car XXXXXX
+report cam2 car 123456
+report cam2 car 12AB34
+report cam2 car 12CB56
+report cam2 car 12BA56
+report cam2 car 123ZZZ64
+report cam3 person 1234
+report cam3 person 1234A
+report cam3 person 1235
+report cam3 person 1234
+report cam1 car 1234AB
+report c1 car 1234AB
+checkpoint 2
+spot car 1*
+checkpoint 3
+spot car 1234AB
+checkpoint 4
+trail car 1234AB
+checkpoint 5
+spot person 12*
+checkpoint 6
+spot person 12*5
+spot person 12345
+quit

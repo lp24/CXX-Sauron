@@ -3,10 +3,10 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<!-- Please replace 'CXX' below with your C (campus) with A (Alameda) / 
+	<!-- Please replace 'A45' below with your C (campus) with A (Alameda) / 
 		T (Tagus); and your group number with two digits. Then delete this comment. -->
 	<parent>
-		<groupId>pt.tecnico.sauron.CXX</groupId>
+		<groupId>pt.tecnico.sauron.A45</groupId>
 		<artifactId>Sauron</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
@@ -19,8 +19,9 @@
 		<!-- see parent POM for more properties -->
 
 		<mainclass>pt.tecnico.sauron.silo.client.SiloClientApp</mainclass>
-		<server.host>localhost</server.host>
-		<server.port>8080</server.port>
+		<zoo.host>localhost</zoo.host>
+		<zoo.port>2181</zoo.port>
+		<instance>1</instance>
 	</properties>
 
 	<dependencies>
@@ -42,6 +43,12 @@
 			<artifactId>junit-jupiter-engine</artifactId>
 			<version>${version.junit}</version>
 			<scope>test</scope>
+		</dependency>
+		<!-- ZK Naming -->
+		<dependency>
+			<groupId>pt.ulisboa.tecnico.sdis</groupId>
+			<artifactId>zk-naming</artifactId>
+			<version>1.0.3</version>
 		</dependency>
 	</dependencies>
 
@@ -100,8 +107,9 @@
 				<configuration>
 					<mainClass>${mainclass}</mainClass>
 					<arguments>
-						<argument>${server.host}</argument>
-						<argument>${server.port}</argument>
+						<argument>${zoo.host}</argument>
+						<argument>${zoo.port}</argument>
+						<argument>${instance}</argument>
 					</arguments>
 				</configuration>
 			</plugin>

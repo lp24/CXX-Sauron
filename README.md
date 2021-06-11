@@ -5,12 +5,11 @@ Distributed Systems 2019-2020, 2nd semester project
 
 ## Authors
 
-*(fill-in line below with group identifier e.g. A07 or T22; and then delete this line)*  
-**Group CXX**
+**Group A45**
 
 ### Code identification
 
-In all the source files (including POMs), please replace __CXX__ with your group identifier.  
+In all the source files (including POMs), please replace __A45__ with your group identifier.  
 The group identifier is composed by Campus - A (Alameda) or T (Tagus) - and number - always with two digits.  
 This change is important for code dependency management, to make sure that your code runs using the correct components and not someone else's.
 
@@ -18,11 +17,12 @@ This change is important for code dependency management, to make sure that your 
 
 *(fill-in table below with team members; and then delete this line)*  
 
-| Number | Name              | User                             | Email                               |
-| -------|-------------------|----------------------------------| ------------------------------------|
-| 11111  | Alice Distributed | <https://github.com/AliceUser>   | <mailto:alice@tecnico.ulisboa.pt>   |
-| 22222  | Bob Systems       | <https://github.com/BobUser>     | <mailto:bob@tecnico.ulisboa.pt>     |
-| 33333  | Charlie Rules     | <https://github.com/CharlieUser> | <mailto:charlie@tecnico.ulisboa.pt> |
+| Number | Name              | User                                | Email                                        |
+| -------|-------------------|-------------------------------------| ---------------------------------------------|
+| 80894  | Basanta Poudel    | <https://github.com/BasantaPoudel>  | <mailto:basanta.poudel@tecnico.ulisboa.pt>   |
+| 83500  | Luis Ferreira     | <https://github.com/lp24>           | <mailto:luis.pedro.f@tecnico.ulisboa.pt>     |
+| 86477  | Maria Lopes      | <https://github.com/MargaridaLopes>  | <mailto:maria.margarida.espanhol.lopes@tecnico.ulisboa.pt>         |
+                        
 
 ### Task leaders
 
@@ -31,12 +31,12 @@ This change is important for code dependency management, to make sure that your 
 | Task set | To-Do                         | Leader              |
 | ---------|-------------------------------| --------------------|
 | core     | protocol buffers, silo-client | _(whole team)_      |
-| T1       | cam_join, cam_info, eye       | _Alice Distributed_ |
-| T2       | report, spotter               | _Bob Systems_       |
-| T3       | track, trackMatch, trace      | _Charlie Rules_     |
-| T4       | test T1                       | _Charlie Rules_     |
-| T5       | test T2                       | _Alice Distributed_ |
-| T6       | test T3                       | _Bob Systems_       |
+| T1       | cam_join, cam_info, eye       | Basanta Poudel      |
+| T2       | report, spotter               | _Luis Ferreira_     |
+| T3       | track, trackMatch, trace      | _Margarida Lopes_   |
+| T4       | test T1                       | _Margarida Lopes_   |
+| T5       | test T2                       | Basanta Poudel      |
+| T6       | test T3                       | _Luis Ferreira_     |
 
 
 ## Getting Started

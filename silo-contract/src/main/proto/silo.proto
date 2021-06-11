@@ -3,4 +3,164 @@
 //
 syntax = "proto3";
 package pt.tecnico.sauron.silo.grpc;
+option java_multiple_files = true;
+
+import "google/protobuf/timestamp.proto";
+
+//Possible Observed Types
+enum ObservedType{
+	CAR=0;
+	PERSON=1;
+}
+
+//Observed
+message Observed{
+	ObservedType type=1;
+	string id=2;
+}
+
+//Observation
+message Observation{
+	Observed observed = 1;
+	string camName = 2;
+	Location camLocation=3;
+	google.protobuf.Timestamp time=4;
+}
+
+//Location
+message Location{
+	double camLatitude=1;
+	double camLongitude=2;
+}
+	
+//CamJoin
+message CamJoinRequest{
+	string camName =1;
+	Location camLocation=2;
+}
+
+message CamJoinResponse{
+	//No args
+}
+
+//CamInfo
+message CamInfoRequest{
+	string camName=1;
+}
+
+message CamInfoResponse{
+	Location camLocation=1;
+	VectorialTimeStamp timeStamp = 2;
+}
+
+//Report, sends list of observations to silo.
+message ReportRequest{
+	string camName =1;
+	repeated Observed observedList =2;
+}
+
+message ReportResponse{
+	//No args
+}
+
+///Track
+message TrackRequest{
+	Observed observed=1;
+}
+
+message TrackResponse{
+	Observation observation =1;
+	VectorialTimeStamp timeStamp = 2;
+}
+	
+//TrackMatch
+message TrackMatchRequest{
+	Observed observed = 1;
+}
+
+message TrackMatchResponse{
+	repeated Observation observationList =1;
+	VectorialTimeStamp timeStamp = 2;
+}
+
+//Trace
+message TraceRequest{
+	Observed observed=1;
+}
+
+message TraceResponse{
+	repeated Observation observationList =1;
+	VectorialTimeStamp timeStamp = 2;
+
+}
+
+//Control Operations
+//Ping
+message PingRequest{
+	string text =1;
+}
+
+message PingResponse{
+	string text=1;
+}
+
+//Clear
+message ClearRequest{
+	//No args
+}
+message ClearResponse{
+	//No args
+}
+
+//Init
+message InitRequest{
+	//Initial Configuration??
+}
+
+message InitResponse{
+	//No args
+}
+
+message UpdateNr{
+	int32 replicaNr = 1;
+	int32 replicaUpdateNr = 2;
+}
+
+message Update{
+	string operation = 1;
+	UpdateNr updateNr = 2;
+}
+
+message VectorialTimeStamp{
+	repeated UpdateNr updateNr = 1;
+}
+
+message GossipRequest{
+	VectorialTimeStamp vectorialTimeStamp = 1;
+}
+
+message GossipResponse{
+	repeated Update log =1;
+}
+
+//SiloService
+service SiloService{
+	rpc ctrl_ping(PingRequest) returns (PingResponse);
+	rpc ctrl_clear(ClearRequest) returns (ClearResponse);
+	rpc ctrl_init(InitRequest) returns (InitResponse);
+	
+	rpc CamJoin(CamJoinRequest) returns (CamJoinResponse);
+	rpc CamInfo(CamInfoRequest) returns (CamInfoResponse);
+	rpc Report(ReportRequest) returns (ReportResponse);
+	rpc Track(TrackRequest) returns (TrackResponse);
+	rpc TrackMatch(TrackMatchRequest) returns (TrackMatchResponse);
+	rpc Trace(TraceRequest) returns (TraceResponse);
+	
+	rpc Gossip(GossipRequest) returns (GossipResponse);
+
+}
+
+
+
+
 
